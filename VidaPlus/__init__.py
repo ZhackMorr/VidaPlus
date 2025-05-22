@@ -17,6 +17,10 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 # Importa as rotas do arquivo de rotas para a aplicação
-from VidaPlus import routes
 from VidaPlus.models import Contato
 from VidaPlus.models import Paciente
+from VidaPlus.models import Profissional
+from VidaPlus.models import Usuario
+
+# Import o arquivo rotas
+from VidaPlus import routes
